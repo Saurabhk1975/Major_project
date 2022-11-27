@@ -7,11 +7,11 @@ app.use('/',require('./routes'));
 
 
 // setup of view engine EJS
-app.use('view engine','ejs');
-app.set('view','./views');
+app.set('view engine','ejs');
+app.set('views','./views');
 
 
-// view engine setup end here 
+// view engine setup  end
 
 
 app.listen(port,function(err){
