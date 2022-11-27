@@ -6,6 +6,14 @@ const port = 1335;
 app.use('/',require('./routes'));
 
 
+// setup of view engine EJS
+app.use('view engine','ejs');
+app.set('view','./views');
+
+
+// view engine setup end here 
+
+
 app.listen(port,function(err){
     if(err){
         console.log(`error in running the server: ${err}`);
